@@ -1,8 +1,7 @@
 class Character{
-    constructor(name){
+    constructor(name, ele){
         this.name = name;
     }
-
 
     move(){
         // let div = document.getElementById
@@ -15,4 +14,4 @@ class Character{
     }
 }
 
-export {Character};
+export default Character;
