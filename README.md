@@ -28,4 +28,7 @@ In addition, this project will include:
 4. The ability to use a shield that will protect you from falling bubbles
 
 Wireframe:
-image.png
+![image](https://user-images.githubusercontent.com/79114511/205189052-4011bcef-1bd0-418b-bee9-b983c305da6b.png)
+
+
+
