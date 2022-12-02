@@ -28,7 +28,18 @@ In addition, this project will include:
 4. The ability to use a shield that will protect you from falling bubbles
 
 Wireframe:
+
 ![image](https://user-images.githubusercontent.com/79114511/205189052-4011bcef-1bd0-418b-bee9-b983c305da6b.png)
 
 
+Implementation Timeline:
 
+Friday Afternoon & Weekend: get a basic framework of the game to appear on the screen. Get the character to move around
+
+Monday: get the bubbles to move around. Introduce collision detection of the bubbles and the character
+
+Tuesday: introduce the ability for the character to shoot and pop bubbles. Have them pop into smaller bubbles
+
+Wednesday: Introduce multiple levels. Include introduction/instruction page
+
+Thursday morning: clean up everything. Make the CSS as sharp as possible.
