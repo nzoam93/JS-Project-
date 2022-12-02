@@ -1,3 +1,4 @@
+import Projectile from "./projectile";
 
 class Character{
     constructor(name, ele){
@@ -5,9 +6,9 @@ class Character{
         this.ele = ele;
     }
 
-    sayHi(){
-        console.log(`Hi from ${this.name}`)
-    }
+    // sayHi(){
+    //     console.log(`Hi from ${this.name}`)
+    // }
 
     move(e){
         // console.log(e);
@@ -27,12 +28,25 @@ class Character{
             this.ele.style.left = xPos - vel +"px";
         } else if(e.keyCode == "39"){
             this.ele.style.left = xPos + vel +"px";
+        } else if(e.keyCode == "32"){ //space bar
+            this.shoot();
         }
-
-
         //wrap around
         this.wrapAround(xPos);
+    }
 
+    shoot(){
+        let rect = this.ele.getBoundingClientRect();
+        let xPos = rect.left;
+        let width = rect.width;
+        let middle = xPos + width / 2;
+
+        let topPart = document.getElementById("topPart");
+        let projectile = document.createElement("div")
+        projectile.setAttribute("id", `projectile`)
+        topPart.appendChild(projectile);
+        let projectileID = document.getElementById(`projectile`)
+        new Projectile(projectileID)
 
     }
 
