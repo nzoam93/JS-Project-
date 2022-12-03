@@ -2,6 +2,7 @@ import Character from "./character";
 import Bubble from "./bubble"
 import Bonus from "./bonus";
 import Level1 from "./levels/level1";
+import Level2 from "./levels/level2";
 import Homepage from "./levels/homepage";
 
 
@@ -27,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let playButton = document.getElementById("playButton");
     playButton.addEventListener("click", ()=>{
         //starting on level 1 when you first click the play button
-        new Level1();
+        new Level2();
 
     })
 

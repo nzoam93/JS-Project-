@@ -4,6 +4,8 @@ class Character{
     constructor(name, ele){
         this.name = name;
         this.ele = ele;
+        this.numLives = 3;
+        
     }
 
     // sayHi(){

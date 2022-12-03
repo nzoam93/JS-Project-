@@ -1,3 +1,6 @@
+import GameOver from "./levels/gameOver";
+import Character from "./character";
+
 class CollisionDetection{
     constructor(ele, isEnemy){
         this.ele = ele;
@@ -25,8 +28,15 @@ class CollisionDetection{
         if ((charX + charWidth > objectX && charX < objectX + objectWidth) &&
         (charY + charHeight > objectY && charY < objectY + objectHeight)) {
             if(this.isEnemy){
-                console.log("GAME OVER");
+                // let character = document.getElementById("character");
+                // character.numLives -= 1;
+                // console.log(character)
+                // if(character.numLives === 0){
+                    new GameOver();
+                // }
+                //give it a safety net so it doesn't just automatically die again
             }
+
         }
     }
 
